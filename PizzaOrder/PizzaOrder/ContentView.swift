@@ -11,9 +11,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ContentHeaderView()
+                .layoutPriority(2)
+            PageTittleView(title: "Order Pizza")
             MenuListView()
+                .layoutPriority(1)
             OrderListView()
-            Spacer()            
+                .layoutPriority(1)
+            
+//            Spacer()
         }
         .padding()
     }
@@ -23,7 +28,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .previewDevice("iPhone 8")
+//                .previewDevice("iPhone 12")
             ContentView()
                 .colorScheme(.dark)
                 .background(Color.black)

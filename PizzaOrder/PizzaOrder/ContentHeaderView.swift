@@ -14,12 +14,13 @@ struct ContentHeaderView: View {
                 Image("Surf Board")
                     .resizable()
                     .scaledToFit()
+//                    .scaledToFill()
+                    .frame(minWidth: 300, idealWidth: 500, maxWidth: 600, minHeight: 75, idealHeight: 143, maxHeight: 150, alignment: .center)
                 Text("Huli Pizza Company")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .offset(x: -20, y: 30) //Moves the text down
+                    .font(Font.custom("Avinir-Black", size: 20)) //TOOD: Removing scalable fonts
+                    .foregroundColor(.white)
             }
-            
-            Text("Order Pizza")
-                .font(.largeTitle)
         }
     }
 }
@@ -27,5 +28,6 @@ struct ContentHeaderView: View {
 struct ContentHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ContentHeaderView()
+//            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		953B051A25ED9417005DAA7F /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B051925ED9417005DAA7F /* SelectedImageView.swift */; };
+		956CA11A25ED784A005FDEF3 /* PageTittleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11925ED784A005FDEF3 /* PageTittleView.swift */; };
+		956CA11C25ED7A51005FDEF3 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */; };
+		956CA11E25ED7AB9005FDEF3 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */; };
+		956CA12025ED7AE8005FDEF3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11F25ED7AE8005FDEF3 /* HistoryView.swift */; };
+		956CA12225ED7CCB005FDEF3 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA12125ED7CCB005FDEF3 /* ListHeaderView.swift */; };
 		95AAA28B25E6F72300E30F87 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA28A25E6F72300E30F87 /* OrderListView.swift */; };
 		95AAA28D25E6F84600E30F87 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA28C25E6F84600E30F87 /* MenuListView.swift */; };
 		95AAA28F25E6F8AE00E30F87 /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA28E25E6F8AE00E30F87 /* ContentHeaderView.swift */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		953B051925ED9417005DAA7F /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
+		956CA11925ED784A005FDEF3 /* PageTittleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTittleView.swift; sourceTree = "<group>"; };
+		956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		956CA11F25ED7AE8005FDEF3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		956CA12125ED7CCB005FDEF3 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		95AAA28A25E6F72300E30F87 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		95AAA28C25E6F84600E30F87 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		95AAA28E25E6F8AE00E30F87 /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
@@ -48,6 +60,9 @@
 		95AAA28625E6F6E400E30F87 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */,
+				956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */,
+				956CA11F25ED7AE8005FDEF3 /* HistoryView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -97,13 +112,16 @@
 		95F2910025E6D7B800079491 /* PizzaOrder */ = {
 			isa = PBXGroup;
 			children = (
+				956CA12125ED7CCB005FDEF3 /* ListHeaderView.swift */,
+				95F2910325E6D7B800079491 /* ContentView.swift */,
 				95AAA28E25E6F8AE00E30F87 /* ContentHeaderView.swift */,
+				956CA11925ED784A005FDEF3 /* PageTittleView.swift */,
+				953B051925ED9417005DAA7F /* SelectedImageView.swift */,
 				95AAA28925E6F6FA00E30F87 /* OrderView */,
 				95AAA28825E6F6F300E30F87 /* MenuView */,
 				95AAA28725E6F6EC00E30F87 /* Model */,
 				95AAA28625E6F6E400E30F87 /* HistoryView */,
 				95F2910125E6D7B800079491 /* PizzaOrderApp.swift */,
-				95F2910325E6D7B800079491 /* ContentView.swift */,
 				95F2910525E6D7BA00079491 /* Assets.xcassets */,
 				95F2910A25E6D7BA00079491 /* Info.plist */,
 				95F2910725E6D7BA00079491 /* Preview Content */,
@@ -189,13 +207,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AAA29125E6F95F00E30F87 /* OrderRowView.swift in Sources */,
+				956CA12025ED7AE8005FDEF3 /* HistoryView.swift in Sources */,
 				95AAA28F25E6F8AE00E30F87 /* ContentHeaderView.swift in Sources */,
 				95F2910425E6D7B800079491 /* ContentView.swift in Sources */,
 				95AAA28D25E6F84600E30F87 /* MenuListView.swift in Sources */,
+				956CA11A25ED784A005FDEF3 /* PageTittleView.swift in Sources */,
 				95F2910225E6D7B800079491 /* PizzaOrderApp.swift in Sources */,
 				95AAA29325E6F9E300E30F87 /* MenuRowView.swift in Sources */,
 				95AAA28B25E6F72300E30F87 /* OrderListView.swift in Sources */,
+				953B051A25ED9417005DAA7F /* SelectedImageView.swift in Sources */,
+				956CA11C25ED7A51005FDEF3 /* HistoryRowView.swift in Sources */,
+				956CA12225ED7CCB005FDEF3 /* ListHeaderView.swift in Sources */,
 				95AAA29525E6FA2200E30F87 /* RatingsView.swift in Sources */,
+				956CA11E25ED7AB9005FDEF3 /* HistoryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
