@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct MenuRowView: View {
+    var menuItem: MenuItem = testMenuItem
     var body: some View {
-        HStack(alignment: .top, spacing: 15){
-            Image("background_pizza_01")
-//                .cornerRadius(10) //Need to be before the shadow
-//                .border(Color("G4"), width: 2)
-                .clipShape(Capsule())
-                .shadow(color: Color.black.opacity(0.5), radius: 5, x: 5, y: 5) //We can use negative numbers here
-            VStack(alignment: .leading) {
-                Text("Hulli Chicken Pizza")
-                    .font(.title)
-                    .fontWeight(.light)
-                RatingsView()
+        VStack(alignment: .leading){
+            HStack(alignment: .top, spacing: 15){
+                Image("\(menuItem.id)_100w")
+    //                .cornerRadius(10) //Must to be before the shadow
+    //                .border(Color("G4"), width: 2)
+                    .clipShape(Capsule())
+                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 5, y: 5) //We can use negative numbers here
+                VStack(alignment: .leading) {
+                    Text(menuItem.name)
+                        .font(.title)
+                        .fontWeight(.light)
+                    RatingsView(count: menuItem.rating)
+                }
+    //            Spacer()
             }
-//            Spacer()
+            Text(menuItem.description)
         }
     }
 }
 
 struct MenuRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRowView()
+        MenuRowView(menuItem: MenuModel().menu[0])
 //            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }

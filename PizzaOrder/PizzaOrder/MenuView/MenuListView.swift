@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct MenuListView: View {
+    @ObservedObject var orderModel:OrderModel
+    var menuList = MenuModel().menu
     var body: some View {
         VStack {
-            ListHeaderView(text: "Menu")
-            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/){ item in
-                MenuRowView()
-            }
-        }
+            ListHeaderView(orderModel: orderModel, text: "Menu")
+            NavigationView{
+                List(menuList){ item in
+                    NavigationLink(destination: MenuDetailView(orderModel: self.orderModel, menuItem: item)){
+                        MenuRowView(menuItem: item)
+                            .listRowInsets(EdgeInsets())
+                    }
+                }
+                .navigationBarTitle("Pizza Order")
+            }            
+        }.padding(.top, 2)
     }
 }
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuListView()
+        MenuListView(orderModel: OrderModel())
     }
 }

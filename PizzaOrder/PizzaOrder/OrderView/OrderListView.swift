@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct OrderListView: View {
+    var orderModel: OrderModel
     var body: some View {
         VStack {
-            ListHeaderView(text: "Your order")
-            List(0..<5) { item in
-                OrderRowView()
+            //No working
+            List{
+                Section(
+                    header: ListHeaderView(orderModel: self.orderModel, text: "Your order")
+                ){
+                    ForEach(orderModel.orders, id: \.self) { item in
+                        OrderRowView(orderItem: item)
+                    }
+                    .onDelete(perform: delete)
+                }
             }
         }
+    }
+    
+    func delete(at offsets:IndexSet){
+        orderModel.orders.remove(atOffsets: offsets)
     }
 }
 
 struct OrderListView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderListView()
+        OrderListView(orderModel: OrderModel())
     }
 }

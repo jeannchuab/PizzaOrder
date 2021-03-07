@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		953B051A25ED9417005DAA7F /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B051925ED9417005DAA7F /* SelectedImageView.swift */; };
+		954D68F325F2A91F00B281DC /* NewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D68F225F2A91F00B281DC /* NewLayout.swift */; };
 		956CA11A25ED784A005FDEF3 /* PageTittleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11925ED784A005FDEF3 /* PageTittleView.swift */; };
 		956CA11C25ED7A51005FDEF3 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */; };
 		956CA11E25ED7AB9005FDEF3 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */; };
@@ -19,14 +20,25 @@
 		95AAA29125E6F95F00E30F87 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA29025E6F95F00E30F87 /* OrderRowView.swift */; };
 		95AAA29325E6F9E300E30F87 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA29225E6F9E300E30F87 /* MenuRowView.swift */; };
 		95AAA29525E6FA2200E30F87 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAA29425E6FA2200E30F87 /* RatingsView.swift */; };
+		95C46F8525F3EF8300A47233 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C46F8425F3EF8300A47233 /* MenuDetailView.swift */; };
+		95C46F8925F3EFBC00A47233 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C46F8625F3EFBC00A47233 /* HistoryModel.swift */; };
+		95C46F8A25F3EFBC00A47233 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C46F8725F3EFBC00A47233 /* MenuModel.swift */; };
+		95C46F8B25F3EFBC00A47233 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C46F8825F3EFBC00A47233 /* OrderModel.swift */; };
+		95C46F8D25F3F1A800A47233 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C46F8C25F3F1A800A47233 /* PageTitleView.swift */; };
 		95F2910225E6D7B800079491 /* PizzaOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2910125E6D7B800079491 /* PizzaOrderApp.swift */; };
 		95F2910425E6D7B800079491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2910325E6D7B800079491 /* ContentView.swift */; };
 		95F2910625E6D7BA00079491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F2910525E6D7BA00079491 /* Assets.xcassets */; };
 		95F2910925E6D7BA00079491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F2910825E6D7BA00079491 /* Preview Assets.xcassets */; };
+		95F812C225F41C810063C4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F812C025F41C810063C4C7 /* AppDelegate.swift */; };
+		95F812C325F41C810063C4C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F812C125F41C810063C4C7 /* SceneDelegate.swift */; };
+		95F812C525F4251F0063C4C7 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F812C425F4251F0063C4C7 /* HistoryDetailView.swift */; };
+		95F812C725F428740063C4C7 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F812C625F428740063C4C7 /* RootTabView.swift */; };
+		95F812C925F42ACB0063C4C7 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F812C825F42ACB0063C4C7 /* ConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		953B051925ED9417005DAA7F /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
+		954D68F225F2A91F00B281DC /* NewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLayout.swift; sourceTree = "<group>"; };
 		956CA11925ED784A005FDEF3 /* PageTittleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTittleView.swift; sourceTree = "<group>"; };
 		956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
 		956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
@@ -38,12 +50,22 @@
 		95AAA29025E6F95F00E30F87 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
 		95AAA29225E6F9E300E30F87 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		95AAA29425E6FA2200E30F87 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		95C46F8425F3EF8300A47233 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
+		95C46F8625F3EFBC00A47233 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		95C46F8725F3EFBC00A47233 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		95C46F8825F3EFBC00A47233 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		95C46F8C25F3F1A800A47233 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		95F290FE25E6D7B800079491 /* PizzaOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F2910125E6D7B800079491 /* PizzaOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaOrderApp.swift; sourceTree = "<group>"; };
 		95F2910325E6D7B800079491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95F2910525E6D7BA00079491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F2910825E6D7BA00079491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95F2910A25E6D7BA00079491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F812C025F41C810063C4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95F812C125F41C810063C4C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95F812C425F4251F0063C4C7 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		95F812C625F428740063C4C7 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootTabView.swift; path = PizzaOrder/RootTabView.swift; sourceTree = SOURCE_ROOT; };
+		95F812C825F42ACB0063C4C7 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +82,11 @@
 		95AAA28625E6F6E400E30F87 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				95F812C425F4251F0063C4C7 /* HistoryDetailView.swift */,
 				956CA11B25ED7A51005FDEF3 /* HistoryRowView.swift */,
 				956CA11D25ED7AB9005FDEF3 /* HistoryListView.swift */,
 				956CA11F25ED7AE8005FDEF3 /* HistoryView.swift */,
+				95F812C625F428740063C4C7 /* RootTabView.swift */,
 			);
 			path = HistoryView;
 			sourceTree = "<group>";
@@ -70,6 +94,9 @@
 		95AAA28725E6F6EC00E30F87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95C46F8625F3EFBC00A47233 /* HistoryModel.swift */,
+				95C46F8725F3EFBC00A47233 /* MenuModel.swift */,
+				95C46F8825F3EFBC00A47233 /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -77,6 +104,9 @@
 		95AAA28825E6F6F300E30F87 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				95F812C825F42ACB0063C4C7 /* ConfirmView.swift */,
+				95C46F8C25F3F1A800A47233 /* PageTitleView.swift */,
+				95C46F8425F3EF8300A47233 /* MenuDetailView.swift */,
 				95AAA28C25E6F84600E30F87 /* MenuListView.swift */,
 				95AAA29225E6F9E300E30F87 /* MenuRowView.swift */,
 				95AAA29425E6FA2200E30F87 /* RatingsView.swift */,
@@ -112,18 +142,21 @@
 		95F2910025E6D7B800079491 /* PizzaOrder */ = {
 			isa = PBXGroup;
 			children = (
-				956CA12125ED7CCB005FDEF3 /* ListHeaderView.swift */,
-				95F2910325E6D7B800079491 /* ContentView.swift */,
-				95AAA28E25E6F8AE00E30F87 /* ContentHeaderView.swift */,
-				956CA11925ED784A005FDEF3 /* PageTittleView.swift */,
-				953B051925ED9417005DAA7F /* SelectedImageView.swift */,
-				95AAA28925E6F6FA00E30F87 /* OrderView */,
-				95AAA28825E6F6F300E30F87 /* MenuView */,
-				95AAA28725E6F6EC00E30F87 /* Model */,
-				95AAA28625E6F6E400E30F87 /* HistoryView */,
-				95F2910125E6D7B800079491 /* PizzaOrderApp.swift */,
 				95F2910525E6D7BA00079491 /* Assets.xcassets */,
 				95F2910A25E6D7BA00079491 /* Info.plist */,
+				95F812C025F41C810063C4C7 /* AppDelegate.swift */,
+				95AAA28E25E6F8AE00E30F87 /* ContentHeaderView.swift */,
+				95F2910325E6D7B800079491 /* ContentView.swift */,
+				956CA12125ED7CCB005FDEF3 /* ListHeaderView.swift */,
+				954D68F225F2A91F00B281DC /* NewLayout.swift */,
+				956CA11925ED784A005FDEF3 /* PageTittleView.swift */,
+				95F2910125E6D7B800079491 /* PizzaOrderApp.swift */,
+				95F812C125F41C810063C4C7 /* SceneDelegate.swift */,
+				953B051925ED9417005DAA7F /* SelectedImageView.swift */,
+				95AAA28625E6F6E400E30F87 /* HistoryView */,
+				95AAA28825E6F6F300E30F87 /* MenuView */,
+				95AAA28725E6F6EC00E30F87 /* Model */,
+				95AAA28925E6F6FA00E30F87 /* OrderView */,
 				95F2910725E6D7BA00079491 /* Preview Content */,
 			);
 			path = PizzaOrder;
@@ -207,18 +240,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AAA29125E6F95F00E30F87 /* OrderRowView.swift in Sources */,
+				95F812C525F4251F0063C4C7 /* HistoryDetailView.swift in Sources */,
+				95C46F8525F3EF8300A47233 /* MenuDetailView.swift in Sources */,
+				95C46F8A25F3EFBC00A47233 /* MenuModel.swift in Sources */,
+				954D68F325F2A91F00B281DC /* NewLayout.swift in Sources */,
 				956CA12025ED7AE8005FDEF3 /* HistoryView.swift in Sources */,
 				95AAA28F25E6F8AE00E30F87 /* ContentHeaderView.swift in Sources */,
 				95F2910425E6D7B800079491 /* ContentView.swift in Sources */,
+				95F812C325F41C810063C4C7 /* SceneDelegate.swift in Sources */,
 				95AAA28D25E6F84600E30F87 /* MenuListView.swift in Sources */,
+				95F812C725F428740063C4C7 /* RootTabView.swift in Sources */,
 				956CA11A25ED784A005FDEF3 /* PageTittleView.swift in Sources */,
 				95F2910225E6D7B800079491 /* PizzaOrderApp.swift in Sources */,
+				95F812C925F42ACB0063C4C7 /* ConfirmView.swift in Sources */,
 				95AAA29325E6F9E300E30F87 /* MenuRowView.swift in Sources */,
 				95AAA28B25E6F72300E30F87 /* OrderListView.swift in Sources */,
+				95C46F8D25F3F1A800A47233 /* PageTitleView.swift in Sources */,
 				953B051A25ED9417005DAA7F /* SelectedImageView.swift in Sources */,
+				95C46F8925F3EFBC00A47233 /* HistoryModel.swift in Sources */,
 				956CA11C25ED7A51005FDEF3 /* HistoryRowView.swift in Sources */,
 				956CA12225ED7CCB005FDEF3 /* ListHeaderView.swift in Sources */,
 				95AAA29525E6FA2200E30F87 /* RatingsView.swift in Sources */,
+				95F812C225F41C810063C4C7 /* AppDelegate.swift in Sources */,
+				95C46F8B25F3EFBC00A47233 /* OrderModel.swift in Sources */,
 				956CA11E25ED7AB9005FDEF3 /* HistoryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
