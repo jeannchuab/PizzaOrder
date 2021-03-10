@@ -15,9 +15,9 @@ struct PageTitleView: View {
         HStack {
             Spacer()
             Text(title)
-                .font(.largeTitle)
+                .font(.title)
                 .fontWeight(.heavy)
-                .padding(.trailing)
+                .padding(.trailing)            
            
         }.overlay(
             Image(systemName:isDisplayingOrders ?? false ? "chevron.up.square":"chevron.down.square")

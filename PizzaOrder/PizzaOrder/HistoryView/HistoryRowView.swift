@@ -15,7 +15,7 @@ struct HistoryRowView: View {
                 .clipShape(Circle())
                 .shadow(color: .black.opacity(0.5), radius: 10, x: 5, y: 5)
             Text(historyItem.name)
-                .font(.title)
+                .font(.subheadline)
             Spacer()
             
             //Another possibility to create the icon
@@ -27,7 +27,7 @@ struct HistoryRowView: View {
         }.overlay(
             Image(systemName: "chevron.right.square")
                 .padding()
-                .font(.title)
+                .font(.subheadline)
                 .foregroundColor(Color("G3"))
             ,alignment: .trailing
         )
